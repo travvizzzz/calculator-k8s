@@ -63,7 +63,7 @@ pipeline {
             )
         ]) {
             sh '''
-           	kubectl apply -f deployment-dev.yaml --server=https://calculator-dev-control-plane:52645 --insecure-skip-tls-verify=true
+           	kubectl apply -f deployment-dev.yaml --server=https://calculator-dev-control-plane:65273 --insecure-skip-tls-verify=true
             kubectl apply -f service.yaml --validate=false --insecure-skip-tls-verify=true
             '''
         }
